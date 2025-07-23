@@ -1,0 +1,198 @@
+{
+  "company": {
+    "name": {
+      "en": "Nadia Laundry",
+      "ar": "غسيل ناديا"
+    },
+    "mission": {
+      "en": "To deliver exceptional laundry solutions through reliable service, modern technology, and sustainable practices—making life easier and cleaner for our customers.",
+      "ar": "نسعى لتقديم حلول غسيل استثنائية من خلال خدمة موثوقة، وتقنيات حديثة، وممارسات مستدامة، مما يجعل الحياة أسهل وأكثر نظافة لعملائنا."
+    },
+    "vision": {
+      "en": "To be the most trusted and innovative laundry service provider in the region, setting the benchmark for quality, convenience, and customer satisfaction.",
+      "ar": "أن نكون مزود خدمات غسيل الملابس الأكثر ثقةً وابتكارًا في المنطقة، ونضع معايير الجودة والراحة ورضا العملاء."
+    },
+    "description": {
+      "en": "NADIA - LAUNDRY Services is a full-service laundry and dry-cleaning business committed to providing high-quality, eco-friendly, and customer-focused services. We cater to individuals, families, and commercial clients such as hotels, restaurants, gyms, and offices. With a combination of cutting-edge technology and a dedicated team, we ensure garments and fabrics are treated with the utmost care.",
+      "ar": "خدمات الغسيل هي شركة متكاملة لخدمات الغسيل والتنظيف الجاف، ملتزمة بتقديم خدمات عالية الجودة وصديقة للبيئة وتركز على رضا العملاء. نخدم الأفراد والعائلات والشركات، مثل الفنادق والمطاعم والصالات الرياضية والمكاتب. بفضل مزيج من أحدث التقنيات وفريق عمل متخصص، نضمن لكم معاملة الملابس والأقمشة بأقصى درجات العناية."
+    },
+    "location": {
+      "address": {
+        "en": "Sheikh Zayed Road, Dubai Marina, Abu Dhabi, UAE",
+        "ar": "شارع الشيخ زايد، دبي مارينا، أبوظبي، الإمارات العربية المتحدة"
+      },
+      "city": "Abu Dhabi",
+      "coordinates": {
+        "lat": 24.4539,
+        "lng": 54.3773
+      }
+    },
+    "contact": {
+      "phone": "+9710503837591",
+      "email": "info@nadialaundry.com",
+      "whatsapp": "+9710503837591"
+    },
+    "hours": {
+      "sunday": "8:00 AM - 10:00 PM",
+      "monday": "8:00 AM - 10:00 PM",
+      "tuesday": "8:00 AM - 10:00 PM",
+      "wednesday": "8:00 AM - 10:00 PM",
+      "thursday": "8:00 AM - 10:00 PM",
+      "friday": "2:00 PM - 10:00 PM",
+      "saturday": "8:00 AM - 10:00 PM"
+    }
+  },
+  "whatsappConfig": {
+    "phoneNumber": "+9710503837591",
+    "message": {
+      "en": "Hello! I'm interested in your premium laundry services. Could you please help me with pricing and pickup scheduling?",
+      "ar": "مرحبا! أنا مهتم بخدمات الغسيل المميزة الخاصة بكم. هل يمكنكم مساعدتي في الأسعار وجدولة الاستلام؟"
+    },
+    "position": "bottom-right",
+    "themeColor": "#25D366"
+  },
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Ahmed Al Mansouri",
+      "rating": 5,
+      "review": {
+        "en": "Excellent service! My suits come back looking brand new every time. The pickup and delivery service is so convenient.",
+        "ar": "خدمة ممتازة! بدلاتي ترجع وكأنها جديدة في كل مرة. خدمة الاستلام والتوصيل مريحة جداً."
+      },
+      "location": "Dubai Marina",
+      "avatar": "/images/avatar-1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Sarah Johnson",
+      "rating": 5,
+      "review": {
+        "en": "I've been using Nadia Laundry for 2 years now. Their attention to detail is amazing and they always deliver on time.",
+        "ar": "أستخدم غسيل ناديا منذ سنتين الآن. اهتمامهم بالتفاصيل مذهل ويسلمون دائماً في الوقت المحدد."
+      },
+      "location": "Abu Dhabi",
+      "avatar": "/images/avatar-2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Omar Hassan",
+      "rating": 5,
+      "review": {
+        "en": "Professional team, eco-friendly products, and competitive prices. Highly recommended for anyone in Abu Dhabi!",
+        "ar": "فريق محترف، منتجات صديقة للبيئة، وأسعار تنافسية. أنصح بشدة لأي شخص في أبوظبي!"
+      },
+      "location": "Khalifa City",
+      "avatar": "/images/avatar-3.jpg"
+    }
+  ],
+  "features": [
+    {
+      "icon": "Truck",
+      "title": {
+        "en": "Free Pickup & Delivery",
+        "ar": "استلام وتوصيل مجاني"
+      },
+      "description": {
+        "en": "Same day free pickup & drop anywhere in Abu Dhabi",
+        "ar": "استلام وتوصيل مجاني في نفس اليوم في أي مكان في أبوظبي"
+      }
+    },
+    {
+      "icon": "Search",
+      "title": {
+        "en": "Quality Inspection",
+        "ar": "فحص الجودة"
+      },
+      "description": {
+        "en": "Each item is carefully inspected and assessed for the best cleaning method",
+        "ar": "يتم فحص كل قطعة بعناية وتقييمها لأفضل طريقة تنظيف"
+      }
+    },
+    {
+      "icon": "Shirt",
+      "title": {
+        "en": "Premium Care",
+        "ar": "عناية فائقة"
+      },
+      "description": {
+        "en": "We clean your clothes using high-quality products and ensure thorough checks on every piece",
+        "ar": "ننظف ملابسك باستخدام منتجات عالية الجودة ونضمن فحوصات شاملة على كل قطعة"
+      }
+    },
+    {
+      "icon": "Phone",
+      "title": {
+        "en": "Easy Booking",
+        "ar": "حجز سهل"
+      },
+      "description": {
+        "en": "Call us to fix an appointment at your convenience",
+        "ar": "اتصل بنا لتحديد موعد في الوقت المناسب لك"
+      }
+    }
+  ],
+  "speciality": {
+    "title": {
+      "en": "Our Speciality",
+      "ar": "تخصصنا"
+    },
+    "items": [
+      {
+        "id": "advanced-tools",
+        "title": {
+          "en": "Advanced Laundry Tools",
+          "ar": "أدوات غسيل متطورة"
+        },
+        "icon": "Settings"
+      },
+      {
+        "id": "specialized-cleaning",
+        "title": {
+          "en": "Specialized Cleaning",
+          "ar": "تنظيف متخصص"
+        },
+        "icon": "Sparkles"
+      },
+      {
+        "id": "timely-service",
+        "title": {
+          "en": "Timely Service",
+          "ar": "خدمة سريعة"
+        },
+        "icon": "Clock"
+      },
+      {
+        "id": "eco-friendly",
+        "title": {
+          "en": "Eco Friendly Detergent",
+          "ar": "منظفات صديقة للبيئة"
+        },
+        "icon": "Leaf"
+      },
+      {
+        "id": "streamlined-service",
+        "title": {
+          "en": "Streamlined Service",
+          "ar": "خدمة سلسة"
+        },
+        "icon": "Zap"
+      }
+    ]
+  },
+  "offers": [
+    {
+      "id": "welcome",
+      "title": {
+        "en": "25% Discount",
+        "ar": "خصم 25%"
+      },
+      "description": {
+        "en": "Enjoy Our Special Offer 25% Discount",
+        "ar": "استمتع بعرضنا الخاص خصم 25%"
+      },
+      "code": "WELCOME25",
+      "validUntil": "2024-12-31"
+    }
+  ]
+}

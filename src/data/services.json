@@ -1,0 +1,685 @@
+{
+  "services": [
+    {
+      "id": "washing-pressing",
+      "title": {
+        "en": "Washing and pressing",
+        "ar": "الغسيل والكي"
+      },
+      "description": {
+        "en": "Professional washing and pressing service with premium care for your everyday garments.",
+        "ar": "خدمة غسيل وكي احترافية مع عناية فائقة لملابسك اليومية."
+      },
+      "priceRange": {
+        "min": 15,
+        "max": 35,
+        "currency": "AED"
+      },
+      "duration": "24-48 hours",
+      "icon": "Shirt",
+      "images": [
+        "/images/services/washing_and_cleaning.jpg",
+        "/images/services/still-life-say-no-fast-fashion.jpg"
+      ],
+      "features": [
+        "Premium detergents",
+        "Professional pressing",
+        "Careful handling",
+        "Fresh finish"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Collection",
+            "ar": "الجمع"
+          },
+          "description": {
+            "en": "We collect your clothes from your doorstep",
+            "ar": "نجمع ملابسك من عتبة بابك"
+          },
+          "icon": "Truck"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Washing",
+            "ar": "الغسيل"
+          },
+          "description": {
+            "en": "Professional washing with premium detergents",
+            "ar": "غسيل احترافي بمنظفات فائقة الجودة"
+          },
+          "icon": "Droplets"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Pressing",
+            "ar": "الكي"
+          },
+          "description": {
+            "en": "Professional pressing and finishing",
+            "ar": "كي واللمسة الأخيرة الاحترافية"
+          },
+          "icon": "Zap"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Delivery",
+            "ar": "التسليم"
+          },
+          "description": {
+            "en": "Fresh clothes delivered to your door",
+            "ar": "ملابس نظيفة تسلم إلى بابك"
+          },
+          "icon": "Home"
+        }
+      ]
+    },
+    {
+      "id": "dry-cleaning",
+      "title": {
+        "en": "Dry Cleaning",
+        "ar": "التنظيف الجاف"
+      },
+      "description": {
+        "en": "Expert dry cleaning for delicate fabrics and formal wear using eco-friendly solvents.",
+        "ar": "تنظيف جاف متخصص للأقمشة الحساسة والملابس الرسمية باستخدام مذيبات صديقة للبيئة."
+      },
+      "priceRange": {
+        "min": 25,
+        "max": 85,
+        "currency": "AED"
+      },
+      "duration": "48-72 hours",
+      "icon": "Sparkles",
+      "images": ["/images/services/dry_cleaning.jpg"],
+      "features": [
+        "Eco-friendly solvents",
+        "Delicate fabric care",
+        "Professional pressing",
+        "Stain removal"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Inspection",
+            "ar": "الفحص"
+          },
+          "description": {
+            "en": "Thorough inspection for stains and fabric type",
+            "ar": "فحص شامل للبقع ونوع القماش"
+          },
+          "icon": "Search"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Treatment",
+            "ar": "المعالجة"
+          },
+          "description": {
+            "en": "Specialized cleaning treatment",
+            "ar": "معالجة تنظيف متخصصة"
+          },
+          "icon": "Beaker"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Pressing",
+            "ar": "الكي"
+          },
+          "description": {
+            "en": "Professional pressing and finishing",
+            "ar": "كي واللمسة الأخيرة الاحترافية"
+          },
+          "icon": "Zap"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Delivery",
+            "ar": "التسليم"
+          },
+          "description": {
+            "en": "Ready-to-wear garments delivered",
+            "ar": "ملابس جاهزة للارتداء تسلم"
+          },
+          "icon": "CheckCircle"
+        }
+      ]
+    },
+    {
+      "id": "steam-ironing",
+      "title": {
+        "en": "Steam Ironing",
+        "ar": "الكي بالبخار"
+      },
+      "description": {
+        "en": "Professional steam ironing service for crisp, wrinkle-free garments with expert finish.",
+        "ar": "خدمة كي بالبخار احترافية للحصول على ملابس مقرمشة وخالية من التجاعيد مع لمسة خبراء."
+      },
+      "priceRange": {
+        "min": 8,
+        "max": 25,
+        "currency": "AED"
+      },
+      "duration": "12-24 hours",
+      "icon": "Zap",
+      "images": ["/images/services/steam_ironing.jpg"],
+      "features": [
+        "Professional steam ironing",
+        "Wrinkle removal",
+        "Expert finish",
+        "Quick service"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Sorting",
+            "ar": "الفرز"
+          },
+          "description": {
+            "en": "Clothes sorted by fabric type",
+            "ar": "فرز الملابس حسب نوع القماش"
+          },
+          "icon": "Layers"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Steam Ironing",
+            "ar": "الكي بالبخار"
+          },
+          "description": {
+            "en": "Professional steam ironing",
+            "ar": "كي احترافي بالبخار"
+          },
+          "icon": "Wind"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Quality Check",
+            "ar": "فحص الجودة"
+          },
+          "description": {
+            "en": "Final quality inspection",
+            "ar": "فحص الجودة النهائي"
+          },
+          "icon": "Eye"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Packaging",
+            "ar": "التغليف"
+          },
+          "description": {
+            "en": "Careful packaging for delivery",
+            "ar": "تغليف بعناية للتسليم"
+          },
+          "icon": "Gift"
+        }
+      ]
+    },
+    {
+      "id": "delicate-wash",
+      "title": {
+        "en": "Delicate wash cycle",
+        "ar": "دورة غسيل الملابس الرقيقة"
+      },
+      "description": {
+        "en": "Specialized delicate wash cycle for sensitive fabrics with gentle care and attention.",
+        "ar": "دورة غسيل متخصصة للأقمشة الحساسة مع عناية ورعاية لطيفة."
+      },
+      "priceRange": {
+        "min": 20,
+        "max": 60,
+        "currency": "AED"
+      },
+      "duration": "24-72 hours",
+      "icon": "Heart",
+      "images": [
+        "/images/services/dedicate_washing_cycle.jpg",
+        "/images/services/washing_and_cleaning.jpg"
+      ],
+      "features": [
+        "Gentle cleaning techniques",
+        "Delicate fabric care",
+        "Hand washing when needed",
+        "Expert treatment"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Assessment",
+            "ar": "التقييم"
+          },
+          "description": {
+            "en": "Fabric type and care assessment",
+            "ar": "تقييم نوع القماش والعناية"
+          },
+          "icon": "Target"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Gentle Treatment",
+            "ar": "العلاج اللطيف"
+          },
+          "description": {
+            "en": "Specialized delicate wash treatment",
+            "ar": "علاج غسيل رقيق متخصص"
+          },
+          "icon": "Droplet"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Careful Drying",
+            "ar": "التجفيف بعناية"
+          },
+          "description": {
+            "en": "Gentle drying process",
+            "ar": "عملية تجفيف لطيفة"
+          },
+          "icon": "Sun"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Final Check",
+            "ar": "الفحص النهائي"
+          },
+          "description": {
+            "en": "Quality verification for delicate items",
+            "ar": "التحقق من الجودة للعناصر الرقيقة"
+          },
+          "icon": "CheckCircle2"
+        }
+      ]
+    },
+    {
+      "id": "carpet-cleaning",
+      "title": {
+        "en": "Carpet cleaning and sanitization",
+        "ar": "تنظيف وتعقيم السجاد"
+      },
+      "description": {
+        "en": "Professional carpet cleaning and sanitization service for deep cleaning and hygiene.",
+        "ar": "خدمة تنظيف وتعقيم السجاد الاحترافية للتنظيف العميق والنظافة."
+      },
+      "priceRange": {
+        "min": 50,
+        "max": 200,
+        "currency": "AED"
+      },
+      "duration": "3-5 days",
+      "icon": "Home",
+      "images": ["/images/services/carpet_cleaning_and_sanitization.jpg"],
+      "features": [
+        "Deep cleaning",
+        "Sanitization",
+        "Stain removal",
+        "Professional equipment"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Pickup",
+            "ar": "الاستلام"
+          },
+          "description": {
+            "en": "Professional pickup service",
+            "ar": "خدمة استلام احترافية"
+          },
+          "icon": "TruckIcon"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Deep Clean",
+            "ar": "التنظيف العميق"
+          },
+          "description": {
+            "en": "Thorough deep cleaning and sanitization",
+            "ar": "تنظيف عميق شامل وتعقيم"
+          },
+          "icon": "Waves"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Sanitization",
+            "ar": "التعقيم"
+          },
+          "description": {
+            "en": "Professional sanitization process",
+            "ar": "عملية تعقيم احترافية"
+          },
+          "icon": "Shield"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Return",
+            "ar": "الإرجاع"
+          },
+          "description": {
+            "en": "Clean carpets returned to you",
+            "ar": "السجاد النظيف يرجع إليك"
+          },
+          "icon": "RotateCcw"
+        }
+      ]
+    },
+    {
+      "id": "curtain-cleaning",
+      "title": {
+        "en": "Cleaning curtain",
+        "ar": "تنظيف الستائر"
+      },
+      "description": {
+        "en": "Professional curtain cleaning service for fresh, clean curtains with expert care.",
+        "ar": "خدمة تنظيف الستائر الاحترافية للحصول على ستائر نظيفة ومنعشة مع عناية خبراء."
+      },
+      "priceRange": {
+        "min": 30,
+        "max": 100,
+        "currency": "AED"
+      },
+      "duration": "2-4 days",
+      "icon": "Home",
+      "images": ["/images/services/curtains.jpg"],
+      "features": [
+        "Dust removal",
+        "Fabric care",
+        "Color protection",
+        "Professional cleaning"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Collection",
+            "ar": "الجمع"
+          },
+          "description": {
+            "en": "Professional curtain collection",
+            "ar": "جمع الستائر احترافي"
+          },
+          "icon": "Truck"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Cleaning",
+            "ar": "التنظيف"
+          },
+          "description": {
+            "en": "Specialized curtain cleaning",
+            "ar": "تنظيف الستائر المتخصص"
+          },
+          "icon": "Sparkles"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Drying",
+            "ar": "التجفيف"
+          },
+          "description": {
+            "en": "Careful drying process",
+            "ar": "عملية تجفيف بعناية"
+          },
+          "icon": "Sun"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Delivery",
+            "ar": "التسليم"
+          },
+          "description": {
+            "en": "Clean curtains delivered back",
+            "ar": "تسليم الستائر النظيفة"
+          },
+          "icon": "Home"
+        }
+      ]
+    },
+    {
+      "id": "baby-stroller-cleaning",
+      "title": {
+        "en": "Cleaning and sterilizing baby strollers",
+        "ar": "تنظيف وتعقيم عربات الأطفال"
+      },
+      "description": {
+        "en": "Specialized cleaning and sterilization service for baby strollers ensuring safety and hygiene.",
+        "ar": "خدمة تنظيف وتعقيم متخصصة لعربات الأطفال لضمان السلامة والنظافة."
+      },
+      "priceRange": {
+        "min": 40,
+        "max": 80,
+        "currency": "AED"
+      },
+      "duration": "24-48 hours",
+      "icon": "Baby",
+      "images": ["/images/services/baby_strollers.jpg"],
+      "features": [
+        "Baby-safe cleaning",
+        "Complete sterilization",
+        "Fabric and frame cleaning",
+        "Safety inspection"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Inspection",
+            "ar": "الفحص"
+          },
+          "description": {
+            "en": "Thorough safety and cleanliness inspection",
+            "ar": "فحص شامل للسلامة والنظافة"
+          },
+          "icon": "Search"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Cleaning",
+            "ar": "التنظيف"
+          },
+          "description": {
+            "en": "Deep cleaning with baby-safe products",
+            "ar": "تنظيف عميق بمنتجات آمنة للأطفال"
+          },
+          "icon": "Sparkles"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Sterilization",
+            "ar": "التعقيم"
+          },
+          "description": {
+            "en": "Complete sterilization process",
+            "ar": "عملية تعقيم كاملة"
+          },
+          "icon": "Shield"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Final Check",
+            "ar": "الفحص النهائي"
+          },
+          "description": {
+            "en": "Safety and quality verification",
+            "ar": "التحقق من السلامة والجودة"
+          },
+          "icon": "CheckCircle"
+        }
+      ]
+    },
+    {
+      "id": "shoe-cleaning",
+      "title": {
+        "en": "Shoe cleaning",
+        "ar": "تنظيف الأحذية"
+      },
+      "description": {
+        "en": "Professional shoe cleaning service for all types of footwear with expert care and restoration.",
+        "ar": "خدمة تنظيف الأحذية الاحترافية لجميع أنواع الأحذية مع عناية وترميم خبراء."
+      },
+      "priceRange": {
+        "min": 15,
+        "max": 50,
+        "currency": "AED"
+      },
+      "duration": "24-48 hours",
+      "icon": "ShoppingBag",
+      "images": ["/images/services/shoe_cleaning.jpg"],
+      "features": [
+        "All shoe types",
+        "Deep cleaning",
+        "Polish and protection",
+        "Odor removal"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Assessment",
+            "ar": "التقييم"
+          },
+          "description": {
+            "en": "Shoe type and condition assessment",
+            "ar": "تقييم نوع الحذاء وحالته"
+          },
+          "icon": "Eye"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Cleaning",
+            "ar": "التنظيف"
+          },
+          "description": {
+            "en": "Deep cleaning process",
+            "ar": "عملية تنظيف عميقة"
+          },
+          "icon": "Droplets"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Polish",
+            "ar": "التلميع"
+          },
+          "description": {
+            "en": "Professional polishing and protection",
+            "ar": "تلميع وحماية احترافية"
+          },
+          "icon": "Sparkles"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Final Touch",
+            "ar": "اللمسة الأخيرة"
+          },
+          "description": {
+            "en": "Final inspection and finishing",
+            "ar": "فحص نهائي وتشطيب"
+          },
+          "icon": "CheckCircle"
+        }
+      ]
+    },
+    {
+      "id": "alteration-work",
+      "title": {
+        "en": "Alteration work",
+        "ar": "أعمال التعديل"
+      },
+      "description": {
+        "en": "Professional alteration and tailoring services for perfect fitting garments and repairs.",
+        "ar": "خدمات تعديل وخياطة احترافية للحصول على ملابس مناسبة تماماً وإصلاحات."
+      },
+      "priceRange": {
+        "min": 25,
+        "max": 100,
+        "currency": "AED"
+      },
+      "duration": "3-7 days",
+      "icon": "Scissors",
+      "images": ["/images/services/altrations.jpg"],
+      "features": [
+        "Expert tailoring",
+        "Custom fitting",
+        "Repair services",
+        "Quality materials"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": {
+            "en": "Consultation",
+            "ar": "الاستشارة"
+          },
+          "description": {
+            "en": "Fitting and alteration consultation",
+            "ar": "استشارة القياس والتعديل"
+          },
+          "icon": "Users"
+        },
+        {
+          "step": 2,
+          "title": {
+            "en": "Measuring",
+            "ar": "القياس"
+          },
+          "description": {
+            "en": "Precise measurements and marking",
+            "ar": "قياسات دقيقة ووضع علامات"
+          },
+          "icon": "Ruler"
+        },
+        {
+          "step": 3,
+          "title": {
+            "en": "Alteration",
+            "ar": "التعديل"
+          },
+          "description": {
+            "en": "Professional alteration work",
+            "ar": "أعمال تعديل احترافية"
+          },
+          "icon": "Scissors"
+        },
+        {
+          "step": 4,
+          "title": {
+            "en": "Final Fitting",
+            "ar": "القياس النهائي"
+          },
+          "description": {
+            "en": "Final fitting and quality check",
+            "ar": "قياس نهائي وفحص الجودة"
+          },
+          "icon": "CheckCircle"
+        }
+      ]
+    }
+  ]
+}

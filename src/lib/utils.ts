@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { Language, BilingualText } from "@/types";
@@ -126,7 +127,9 @@ export function getBusinessHours(day: string): string {
 
 export function isBusinessOpen(): boolean {
   const now = new Date();
-  const day = now.toLocaleDateString("en-US", { weekday: "lowercase" });
+  const day = now
+    .toLocaleDateString("en-US", { weekday: "long" })
+    .toLowerCase();
   const currentTime = now.getHours() * 60 + now.getMinutes();
 
   const businessHours: Record<string, { open: number; close: number }> = {

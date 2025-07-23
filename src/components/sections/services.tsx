@@ -80,7 +80,7 @@ export function Services() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
       },
     },
   };
@@ -121,7 +121,7 @@ export function Services() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
         >
-          {featuredServices.map((service, index) => {
+          {featuredServices.map((service) => {
             const IconComponent = service.icon;
             return (
               <motion.div

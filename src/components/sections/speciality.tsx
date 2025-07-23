@@ -1,17 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Settings,
-  Sparkles,
-  Clock,
-  Leaf,
-  Zap,
-  Star,
-} from "lucide-react";
+import { Settings, Sparkles, Clock, Leaf, Zap, Star } from "lucide-react";
 import { useLanguage } from "@/components/providers/language-provider";
 import { getLocalizedText } from "@/lib/utils";
 import companyData from "@/data/company.json";
+import { easeOut } from "framer-motion";
 
 const iconMap = {
   Settings,
@@ -22,7 +16,7 @@ const iconMap = {
 };
 
 export function Speciality() {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
   const { speciality } = companyData;
 
   const containerVariants = {
@@ -42,7 +36,7 @@ export function Speciality() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
+        ease: easeOut,
       },
     },
   };
@@ -70,7 +64,8 @@ export function Speciality() {
           </h2>
 
           <p className="text-body-large text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Discover the premium features that set our laundry service apart from the rest
+            Discover the premium features that set our laundry service apart
+            from the rest
           </p>
         </motion.div>
 
@@ -82,9 +77,9 @@ export function Speciality() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"
         >
-          {speciality.items.map((item, index) => {
+          {speciality.items.map((item) => {
             const IconComponent = iconMap[item.icon as keyof typeof iconMap];
-            
+
             return (
               <motion.div
                 key={item.id}
@@ -97,7 +92,7 @@ export function Speciality() {
                     <div className="w-16 h-16 mx-auto bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <IconComponent className="h-8 w-8 text-white" />
                     </div>
-                    
+
                     {/* Glow effect */}
                     <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>

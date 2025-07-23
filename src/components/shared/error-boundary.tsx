@@ -77,7 +77,7 @@ const DefaultErrorFallback: React.FC<ErrorFallbackProps> = ({
           </h1>
 
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            We're sorry, but something unexpected happened. Please try
+            We&apos;re sorry, but something unexpected happened. Please try
             refreshing the page or go back to the homepage.
           </p>
 

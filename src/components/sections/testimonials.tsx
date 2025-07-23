@@ -106,12 +106,12 @@ export function Testimonials() {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 font-medium leading-relaxed mb-8 italic"
                 >
-                  "
+                  &quot;
                   {getLocalizedText(
                     testimonials[currentIndex].review,
                     language
                   )}
-                  "
+                  &quot;
                 </motion.blockquote>
 
                 {/* Customer Info */}
@@ -204,7 +204,7 @@ export function Testimonials() {
 
               {/* Review */}
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
-                "{getLocalizedText(testimonial.review, language)}"
+                &quot;{getLocalizedText(testimonial.review, language)}&quot;
               </p>
 
               {/* Customer Info */}

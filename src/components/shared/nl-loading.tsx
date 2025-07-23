@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, easeInOut } from "framer-motion";
 
 interface NLLoadingProps {
   size?: "sm" | "md" | "lg";
@@ -10,16 +10,16 @@ interface NLLoadingProps {
 export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
   const sizeClasses = {
     sm: "text-4xl h-16 w-16",
-    md: "text-6xl h-24 w-24", 
-    lg: "text-8xl h-32 w-32"
+    md: "text-6xl h-24 w-24",
+    lg: "text-8xl h-32 w-32",
   };
 
   const letterVariants = {
-    initial: { 
-      opacity: 0, 
+    initial: {
+      opacity: 0,
       y: 20,
       scale: 0.8,
-      rotateY: 0
+      rotateY: 0,
     },
     animate: {
       opacity: [0, 1, 1, 0],
@@ -29,18 +29,18 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
+        ease: easeInOut,
+      },
+    },
   };
 
   const containerVariants = {
     initial: {},
     animate: {
       transition: {
-        staggerChildren: 0.3
-      }
-    }
+        staggerChildren: 0.3,
+      },
+    },
   };
 
   const shimmerVariants = {
@@ -50,10 +50,10 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: "easeInOut",
-        delay: 1
-      }
-    }
+        ease: easeInOut,
+        delay: 1,
+      },
+    },
   };
 
   return (
@@ -69,12 +69,12 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
           className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400 rounded-2xl blur-xl opacity-30"
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.6, 0.3]
+            opacity: [0.3, 0.6, 0.3],
           }}
           transition={{
             duration: 2,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         />
 
@@ -86,8 +86,7 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
             className="relative text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-purple-600 to-emerald-500"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            N
-            {/* Shimmer effect for N */}
+            N{/* Shimmer effect for N */}
             <motion.div
               variants={shimmerVariants}
               className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"
@@ -99,19 +98,18 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
           <motion.span
             variants={letterVariants}
             className="relative text-transparent bg-clip-text bg-gradient-to-br from-emerald-500 via-blue-600 to-purple-500"
-            style={{ 
+            style={{
               fontFamily: "var(--font-display)",
-              animationDelay: "0.3s"
+              animationDelay: "0.3s",
             }}
           >
-            L
-            {/* Shimmer effect for L */}
+            L{/* Shimmer effect for L */}
             <motion.div
               variants={shimmerVariants}
               className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"
-              style={{ 
+              style={{
                 mixBlendMode: "overlay",
-                animationDelay: "0.3s"
+                animationDelay: "0.3s",
               }}
             />
           </motion.span>
@@ -123,16 +121,16 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
             key={i}
             className="absolute w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"
             animate={{
-              x: [0, Math.cos(i * 60 * Math.PI / 180) * 40],
-              y: [0, Math.sin(i * 60 * Math.PI / 180) * 40],
+              x: [0, Math.cos((i * 60 * Math.PI) / 180) * 40],
+              y: [0, Math.sin((i * 60 * Math.PI) / 180) * 40],
               opacity: [0, 1, 0],
-              scale: [0, 1, 0]
+              scale: [0, 1, 0],
             }}
             transition={{
               duration: 2,
               repeat: Infinity,
               delay: i * 0.2,
-              ease: "easeInOut"
+              ease: "easeInOut",
             }}
           />
         ))}
@@ -144,7 +142,7 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
           transition={{
             duration: 3,
             repeat: Infinity,
-            ease: "linear"
+            ease: "linear",
           }}
         />
       </motion.div>
@@ -153,16 +151,16 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
       <motion.div
         className="ml-4 text-gray-600 dark:text-gray-400 font-medium"
         animate={{
-          opacity: [0.5, 1, 0.5]
+          opacity: [0.5, 1, 0.5],
         }}
         transition={{
           duration: 1.5,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: "easeInOut",
         }}
       >
         <span className="text-sm">Loading...</span>
-        <motion.div 
+        <motion.div
           className="flex gap-1 mt-1"
           variants={containerVariants}
           initial="initial"
@@ -174,13 +172,13 @@ export function NLLoading({ size = "md", className = "" }: NLLoadingProps) {
               className="w-1 h-1 bg-blue-500 rounded-full"
               animate={{
                 scale: [1, 1.5, 1],
-                opacity: [0.3, 1, 0.3]
+                opacity: [0.3, 1, 0.3],
               }}
               transition={{
                 duration: 0.8,
                 repeat: Infinity,
                 delay: i * 0.2,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             />
           ))}
@@ -199,12 +197,12 @@ export function NLLoadingSimple({ className = "" }: { className?: string }) {
           className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600"
           animate={{
             scale: [1, 1.2, 1],
-            rotateY: [0, 180, 360]
+            rotateY: [0, 180, 360],
           }}
           transition={{
             duration: 2,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         >
           N
@@ -213,13 +211,13 @@ export function NLLoadingSimple({ className = "" }: { className?: string }) {
           className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-emerald-500"
           animate={{
             scale: [1, 1.2, 1],
-            rotateY: [0, -180, -360]
+            rotateY: [0, -180, -360],
           }}
           transition={{
             duration: 2,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 0.3
+            delay: 0.3,
           }}
         >
           L

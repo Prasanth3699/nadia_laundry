@@ -16,6 +16,7 @@ import { MdOutlineLocalLaundryService } from "react-icons/md";
 import { useLanguage } from "@/components/providers/language-provider";
 import { getLocalizedText } from "@/lib/utils";
 import companyData from "@/data/company.json";
+import { easeInOut } from "framer-motion";
 
 export function About() {
   const { language, t } = useLanguage();
@@ -140,7 +141,7 @@ export function About() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        ease: easeInOut,
       },
     },
   };

@@ -115,7 +115,7 @@ export function Process() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
       },
     },
   };
@@ -156,7 +156,7 @@ export function Process() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
         >
-          {processSteps.map((step, index) => {
+          {processSteps.map((step) => {
             const IconComponent = step.icon;
             return (
               <motion.div

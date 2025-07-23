@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Loader2, Shirt, Sparkles } from "lucide-react";
+import { Loader2, Sparkles } from "lucide-react";
 
 interface LoadingProps {
   size?: "sm" | "md" | "lg" | "xl";

@@ -13,16 +13,12 @@ import companyData from "@/data/company.json";
 
 export function Hero() {
   const { language, t } = useLanguage();
-  const { company, whatsappConfig } = companyData;
+  const { whatsappConfig } = companyData;
 
   const handleWhatsAppClick = () => {
     const message = getLocalizedText(whatsappConfig.message, language);
     const whatsappUrl = createWhatsAppUrl(whatsappConfig.phoneNumber, message);
     window.open(whatsappUrl, "_blank");
-  };
-
-  const handleViewServices = () => {
-    scrollToSection("services");
   };
 
   const handleBookService = () => {

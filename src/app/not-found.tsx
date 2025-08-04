@@ -25,42 +25,6 @@ export default function NotFound() {
             >
               404
             </motion.div>
-
-            {/* Floating Laundry Icons */}
-            <motion.div
-              className="absolute top-4 left-1/4"
-              animate={{
-                y: [0, -10, 0],
-                rotate: [0, 5, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            >
-              <div className="w-12 h-12 bg-gradient-to-r from-brand-blue to-brand-green rounded-full flex items-center justify-center">
-                <span className="text-white text-lg">👕</span>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="absolute top-8 right-1/4"
-              animate={{
-                y: [0, -8, 0],
-                rotate: [0, -5, 0],
-              }}
-              transition={{
-                duration: 2.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.5,
-              }}
-            >
-              <div className="w-10 h-10 bg-gradient-to-r from-brand-pink to-brand-gold rounded-full flex items-center justify-center">
-                <span className="text-white text-sm">🧽</span>
-              </div>
-            </motion.div>
           </div>
 
           {/* Error Message */}
@@ -117,7 +81,7 @@ export default function NotFound() {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button
-                onClick={() => window.open("tel:+9710503837591", "_self")}
+                onClick={() => window.open("tel:+9710504837591", "_self")}
                 variant="outline"
                 className="flex items-center gap-2"
               >

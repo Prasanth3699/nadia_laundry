@@ -11,7 +11,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
       defaultTheme="system"
       enableSystem={true}
       disableTransitionOnChange={false}
-      storageKey="theme"
+      storageKey="nadia-laundry-theme"
       {...props}
     >
       {children}

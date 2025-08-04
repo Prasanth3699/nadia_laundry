@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nadialaundry.com/sitemap.xml
+
+# Disallow admin pages if any
+# Disallow: /admin/
+# Disallow: /api/
+
+# Allow all content for SEO
+Allow: /images/
+Allow: /services/
+Allow: /_next/

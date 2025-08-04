@@ -1,7 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shirt, WashingMachine, ArrowRight, Star, Award } from "lucide-react";
+import {
+  Shirt,
+  WashingMachine,
+  ArrowRight,
+  Star,
+  Award,
+  Clock,
+} from "lucide-react";
 import { useLanguage } from "@/components/providers/language-provider";
 
 export function Services() {
@@ -13,6 +20,24 @@ export function Services() {
 
   // Featured services with appealing visual presentation
   const featuredServices = [
+    // Express Delivery - primary first card
+    {
+      id: "express-delivery",
+      title: { en: "Express Delivery", ar: "التسليم السريع" },
+      description: {
+        en: "Available within 3 to 6 hours with priority pickup",
+        ar: "متاح خلال ٣ إلى ٦ ساعات مع استلام ذو أولوية",
+      },
+      icon: Clock,
+      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+      bgGradient:
+        "from-emerald-50 via-teal-50 to-cyan-50 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20",
+      borderColor: "border-emerald-200 dark:border-emerald-800/40",
+      hoverBorder: "hover:border-teal-400 dark:hover:border-teal-500",
+      iconColor: "text-emerald-600 dark:text-emerald-400",
+      price: "Within 3–6 Hrs",
+      isExpress: true,
+    },
     {
       id: "wash-fold",
       title: { en: "Wash & Fold", ar: "الغسيل والطي" },
@@ -129,6 +154,15 @@ export function Services() {
                 variants={itemVariants}
                 className={`group relative bg-gradient-to-br ${service.bgGradient} rounded-3xl p-8 border-2 ${service.borderColor} ${service.hoverBorder} transition-all duration-300 hover:shadow-2xl hover:scale-105 cursor-pointer`}
               >
+                {/* Express ribbon */}
+                {"isExpress" in service && service.isExpress ? (
+                  <div className="absolute -top-3 -left-3 z-10">
+                    <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-1.5 text-xs font-bold text-white shadow-md">
+                      <span className="h-2 w-2 rounded-full bg-white/90" />
+                      Express
+                    </div>
+                  </div>
+                ) : null}
                 {/* Icon */}
                 <div className="relative mb-6">
                   <div
@@ -151,10 +185,15 @@ export function Services() {
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {getLocalizedText(service.description)}
                   </p>
-                  <div className="pt-2">
+                  <div className="pt-2 flex items-center gap-2">
                     <span className="text-lg font-semibold text-gray-900 dark:text-white bg-white/50 dark:bg-gray-800/50 px-3 py-1 rounded-full">
                       {service.price}
                     </span>
+                    {"isExpress" in service && service.isExpress ? (
+                      <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-300 bg-emerald-100/70 dark:bg-emerald-900/30 px-2.5 py-2.5 rounded-full">
+                        Priority Pickup
+                      </span>
+                    ) : null}
                   </div>
                 </div>
 

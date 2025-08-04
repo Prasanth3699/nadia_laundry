@@ -144,14 +144,35 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Favicons and icons */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo/Nadia Laundry.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo/Nadia Laundry.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/images/logo/Nadia Laundry.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo/Nadia Laundry.png" />
+        {/* Favicons and icons - favicon.ico is automatically handled by Next.js from src/app/ */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/logo/Nadia Laundry.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/logo/Nadia Laundry.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/images/logo/Nadia Laundry.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/logo/Nadia Laundry.png"
+        />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="msapplication-TileImage" content="/images/logo/Nadia Laundry.png" />
+        <meta
+          name="msapplication-TileImage"
+          content="/images/logo/Nadia Laundry.png"
+        />
         <meta name="msapplication-TileColor" content="#3b82f6" />
 
         {/* Theme colors for mobile */}
@@ -207,7 +228,7 @@ export default function RootLayout({
               email: "info@nadialaundry.com",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Sheikh Zayed Road, Dubai Marina",
+                streetAddress: "Abu Dhabi musaffa 16 & Cornich road",
                 addressLocality: "Abu Dhabi",
                 addressCountry: "AE",
               },
@@ -264,12 +285,7 @@ export default function RootLayout({
         className={`${inter.variable} ${cairo.variable} ${crimsonPro.variable} ${playfairDisplay.variable} ${poppins.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem={true}
-          disableTransitionOnChange={false}
-        >
+        <ThemeProvider>
           <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
       </body>

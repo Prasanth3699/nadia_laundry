@@ -83,7 +83,7 @@ export function Hero() {
               Laundry &{" "}
               <span className="text-sky-400 font-extrabold">Dry Cleaning</span>{" "}
               Services in{" "}
-              <span className="text-sky-400 font-extrabold">UAE</span>
+              <span className="text-sky-400 font-extrabold">Abu Dhabi</span>
             </span>
           </motion.h1>
 

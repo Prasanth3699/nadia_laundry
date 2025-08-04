@@ -18,8 +18,8 @@
     },
     "location": {
       "address": {
-        "en": "Sheikh Zayed Road, Dubai Marina, Abu Dhabi, UAE",
-        "ar": "شارع الشيخ زايد، دبي مارينا، أبوظبي، الإمارات العربية المتحدة"
+        "en": "Abu Dhabi Musaffah 16 & Corniche Road, UAE",
+        "ar": "أبوظبي مصفح 16 وطريق الكورنيش، الإمارات العربية المتحدة"
       },
       "city": "Abu Dhabi",
       "coordinates": {
@@ -28,22 +28,22 @@
       }
     },
     "contact": {
-      "phone": "+9710503837591",
+      "phone": "+9710504837591",
       "email": "info@nadialaundry.com",
-      "whatsapp": "+9710503837591"
+      "whatsapp": "+9710504837591"
     },
     "hours": {
-      "sunday": "8:00 AM - 10:00 PM",
-      "monday": "8:00 AM - 10:00 PM",
-      "tuesday": "8:00 AM - 10:00 PM",
-      "wednesday": "8:00 AM - 10:00 PM",
-      "thursday": "8:00 AM - 10:00 PM",
-      "friday": "2:00 PM - 10:00 PM",
-      "saturday": "8:00 AM - 10:00 PM"
+      "sunday": "8:00 AM - 11.45 PM",
+      "monday": "8:00 AM - 11.45 PM",
+      "tuesday": "8:00 AM - 11.45 PM",
+      "wednesday": "8:00 AM - 11.45 PM",
+      "thursday": "8:00 AM - 11.45 PM",
+      "friday": "2:00 PM - 11.45 PM",
+      "saturday": "8:00 AM - 11.45 PM"
     }
   },
   "whatsappConfig": {
-    "phoneNumber": "+9710503837591",
+    "phoneNumber": "+9710504837591",
     "message": {
       "en": "Hello! I'm interested in your premium laundry services. Could you please help me with pricing and pickup scheduling?",
       "ar": "مرحبا! أنا مهتم بخدمات الغسيل المميزة الخاصة بكم. هل يمكنكم مساعدتي في الأسعار وجدولة الاستلام؟"

@@ -18,8 +18,7 @@
       "duration": "24-48 hours",
       "icon": "Shirt",
       "images": [
-        "/images/services/washing_and_cleaning.jpg",
-        "/images/services/still-life-say-no-fast-fashion.jpg"
+        "/images/services/washing_and_cleaning.webp"
       ],
       "features": [
         "Premium detergents",
@@ -95,7 +94,7 @@
       },
       "duration": "48-72 hours",
       "icon": "Sparkles",
-      "images": ["/images/services/dry_cleaning.jpg"],
+      "images": ["/images/services/dry_cleaning.webp"],
       "features": [
         "Eco-friendly solvents",
         "Delicate fabric care",
@@ -170,7 +169,7 @@
       },
       "duration": "12-24 hours",
       "icon": "Zap",
-      "images": ["/images/services/steam_ironing.jpg"],
+      "images": ["/images/services/steam_ironing.webp"],
       "features": [
         "Professional steam ironing",
         "Wrinkle removal",
@@ -246,8 +245,7 @@
       "duration": "24-72 hours",
       "icon": "Heart",
       "images": [
-        "/images/services/dedicate_washing_cycle.jpg",
-        "/images/services/washing_and_cleaning.jpg"
+        "/images/services/dedicate_washing_cycle.webp"
       ],
       "features": [
         "Gentle cleaning techniques",
@@ -323,7 +321,7 @@
       },
       "duration": "3-5 days",
       "icon": "Home",
-      "images": ["/images/services/carpet_cleaning_and_sanitization.jpg"],
+      "images": ["/images/services/carpet_cleaning_and_sanitization.webp"],
       "features": [
         "Deep cleaning",
         "Sanitization",
@@ -398,7 +396,7 @@
       },
       "duration": "2-4 days",
       "icon": "Home",
-      "images": ["/images/services/curtains.jpg"],
+      "images": ["/images/services/curtains.webp"],
       "features": [
         "Dust removal",
         "Fabric care",
@@ -473,7 +471,7 @@
       },
       "duration": "24-48 hours",
       "icon": "Baby",
-      "images": ["/images/services/baby_strollers.jpg"],
+      "images": ["/images/services/baby_strollers.webp"],
       "features": [
         "Baby-safe cleaning",
         "Complete sterilization",
@@ -548,7 +546,7 @@
       },
       "duration": "24-48 hours",
       "icon": "ShoppingBag",
-      "images": ["/images/services/shoe_cleaning.jpg"],
+      "images": ["/images/services/shoe_cleaning.webp"],
       "features": [
         "All shoe types",
         "Deep cleaning",
@@ -623,7 +621,7 @@
       },
       "duration": "3-7 days",
       "icon": "Scissors",
-      "images": ["/images/services/altrations.jpg"],
+      "images": ["/images/services/altrations.webp"],
       "features": [
         "Expert tailoring",
         "Custom fitting",

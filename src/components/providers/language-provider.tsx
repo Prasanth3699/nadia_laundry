@@ -48,6 +48,7 @@ const translations = {
     // Contact
     "contact.title": "Get In Touch",
     "contact.subtitle": "Ready to experience premium laundry care?",
+    "contact.description": "We're here to help! Contact us through any of the channels below for quick support, booking inquiries, or to learn more about our premium laundry services.",
     "contact.phone": "Phone",
     "contact.email": "Email",
     "contact.address": "Address",
@@ -116,6 +117,7 @@ const translations = {
     // Contact
     "contact.title": "تواصل معنا",
     "contact.subtitle": "مستعد لتجربة العناية المميزة بالغسيل؟",
+    "contact.description": "نحن هنا لمساعدتك! تواصل معنا عبر أي من القنوات أدناه للحصول على دعم سريع أو استفسارات الحجز أو لمعرفة المزيد عن خدمات الغسيل المميزة لدينا.",
     "contact.phone": "الهاتف",
     "contact.email": "البريد الإلكتروني",
     "contact.address": "العنوان",

@@ -15,6 +15,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import Image from "next/image";
 
 export function Footer() {
   const { language, t } = useLanguage();
@@ -64,7 +65,20 @@ export function Footer() {
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-brand-blue to-brand-green rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">N</span>
+                  {/* <span className="text-white font-bold text-xl">N</span> */}
+                  <Image
+                    src="/images/logo/Nadia Laundry.png"
+                    alt="Company Logo"
+                    width={48}
+                    height={48}
+                    className="rounded-full"
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                    }}
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">
@@ -79,7 +93,11 @@ export function Footer() {
               </p>
 
               {/* Social Links */}
-              <div className="flex items-center gap-4">
+              <div
+                className={`flex items-center gap-4 ${
+                  language === "ar" ? "justify-start" : "justify-start"
+                }`}
+              >
                 {socialLinks.map((social, index) => (
                   <Link
                     key={index}
@@ -142,12 +160,20 @@ export function Footer() {
 
               <div className="space-y-4">
                 {/* Phone */}
-                <div className="flex items-start gap-3">
-                  <Phone className="h-5 w-5 text-brand-green mt-0.5 flex-shrink-0" />
-                  <div>
+                <div
+                  className={`flex items-start gap-3 ${
+                    language === "ar" ? "flex-row-reverse text-right" : ""
+                  }`}
+                >
+                  <Phone
+                    className={`h-5 w-5 text-brand-green mt-0.5 flex-shrink-0 ${
+                      language === "ar" ? "ml-0 mr-3" : ""
+                    }`}
+                  />
+                  <div className="flex-1">
                     <a
                       href={`tel:${company.contact.phone}`}
-                      className="text-gray-300 hover:text-brand-green transition-colors duration-200"
+                      className="text-gray-300 hover:text-brand-green transition-colors duration-200 block"
                     >
                       {company.contact.phone}
                     </a>
@@ -155,12 +181,20 @@ export function Footer() {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start gap-3">
-                  <Mail className="h-5 w-5 text-brand-blue mt-0.5 flex-shrink-0" />
-                  <div>
+                <div
+                  className={`flex items-start gap-3 ${
+                    language === "ar" ? "flex-row-reverse text-right" : ""
+                  }`}
+                >
+                  <Mail
+                    className={`h-5 w-5 text-brand-blue mt-0.5 flex-shrink-0 ${
+                      language === "ar" ? "ml-0 mr-3" : ""
+                    }`}
+                  />
+                  <div className="flex-1">
                     <a
                       href={`mailto:${company.contact.email}`}
-                      className="text-gray-300 hover:text-brand-blue transition-colors duration-200"
+                      className="text-gray-300 hover:text-brand-blue transition-colors duration-200 block"
                     >
                       {company.contact.email}
                     </a>
@@ -168,19 +202,35 @@ export function Footer() {
                 </div>
 
                 {/* Address */}
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-brand-pink mt-0.5 flex-shrink-0" />
-                  <div>
-                    <span className="text-gray-300">
+                <div
+                  className={`flex items-start gap-3 ${
+                    language === "ar" ? "flex-row-reverse text-right" : ""
+                  }`}
+                >
+                  <MapPin
+                    className={`h-5 w-5 text-brand-pink mt-0.5 flex-shrink-0 ${
+                      language === "ar" ? "ml-0 mr-3" : ""
+                    }`}
+                  />
+                  <div className="flex-1">
+                    <span className="text-gray-300 block">
                       {getLocalizedText(company.location.address, language)}
                     </span>
                   </div>
                 </div>
 
                 {/* Business Hours */}
-                <div className="flex items-start gap-3">
-                  <Clock className="h-5 w-5 text-brand-gold mt-0.5 flex-shrink-0" />
-                  <div>
+                <div
+                  className={`flex items-start gap-3 ${
+                    language === "ar" ? "flex-row-reverse text-right" : ""
+                  }`}
+                >
+                  <Clock
+                    className={`h-5 w-5 text-brand-gold mt-0.5 flex-shrink-0 ${
+                      language === "ar" ? "ml-0 mr-3" : ""
+                    }`}
+                  />
+                  <div className="flex-1">
                     <div className="text-gray-300 text-sm">
                       <div>Sun-Thu: 8:00 AM - 10:00 PM</div>
                       <div>Fri: 2:00 PM - 10:00 PM</div>
@@ -194,9 +244,15 @@ export function Footer() {
               <Button
                 onClick={handleWhatsAppClick}
                 variant="whatsapp"
-                className="w-full mt-6"
+                className={`w-full mt-6 ${
+                  language === "ar" ? "flex-row-reverse" : ""
+                }`}
               >
-                <FaWhatsapp className="mr-2 h-4 w-4" />
+                <FaWhatsapp
+                  className={`h-4 w-4 ${
+                    language === "ar" ? "ml-2 mr-0" : "mr-2"
+                  }`}
+                />
                 {t("hero.cta.whatsapp")}
               </Button>
             </div>

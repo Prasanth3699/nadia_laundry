@@ -39,36 +39,21 @@ export function Services() {
       isExpress: true,
     },
     {
-      id: "wash-fold",
-      title: { en: "Wash & Fold", ar: "الغسيل والطي" },
+      id: "free-delivery",
+      title: { en: "Free Delivery", ar: "توصيل مجاني" },
       description: {
-        en: "Perfect for everyday garments",
-        ar: "مثالي للملابس اليومية",
+        en: "Available on all orders. Minimum order 30.00 AED.",
+        ar: "متاح على جميع الطلبات. الحد الأدنى للطلب 30.00 درهم.",
       },
-      icon: Shirt,
+      // Use distinct visuals from Express Delivery
+      icon: WashingMachine,
       gradient: "from-blue-500 via-cyan-500 to-teal-500",
       bgGradient:
         "from-blue-50 via-cyan-50 to-teal-50 dark:from-blue-950/20 dark:via-cyan-950/20 dark:to-teal-950/20",
       borderColor: "border-blue-200 dark:border-blue-800/40",
       hoverBorder: "hover:border-cyan-400 dark:hover:border-cyan-500",
       iconColor: "text-blue-600 dark:text-blue-400",
-      price: "From AED 15",
-    },
-    {
-      id: "dry-cleaning",
-      title: { en: "Dry Cleaning", ar: "التنظيف الجاف" },
-      description: {
-        en: "Expert care for delicate fabrics",
-        ar: "عناية خبيرة للأقمشة الحساسة",
-      },
-      icon: WashingMachine,
-      gradient: "from-purple-500 via-fuchsia-500 to-pink-500",
-      bgGradient:
-        "from-purple-50 via-fuchsia-50 to-pink-50 dark:from-purple-950/20 dark:via-fuchsia-950/20 dark:to-pink-950/20",
-      borderColor: "border-purple-200 dark:border-purple-800/40",
-      hoverBorder: "hover:border-fuchsia-400 dark:hover:border-fuchsia-500",
-      iconColor: "text-purple-600 dark:text-purple-400",
-      price: "From AED 25",
+      price: "Free Delivery",
     },
     {
       id: "premium-care",

@@ -1,6 +1,27 @@
 {
   "services": [
     {
+      "id": "free-delivery",
+      "title": {
+        "en": "Free Delivery",
+        "ar": "توصيل مجاني"
+      },
+      "description": {
+        "en": "Available on all orders. Minimum order 30.00 AED.",
+        "ar": "متاح على جميع الطلبات. الحد الأدنى للطلب 30.00 درهم."
+      },
+      "priceRange": {
+        "min": 0,
+        "max": 0,
+        "currency": "AED"
+      },
+      "duration": "",
+      "icon": "Truck",
+      "images": ["/images/services/washing_and_cleaning.webp"],
+      "features": ["Free pickup and delivery", "Minimum order 30.00 AED"],
+      "process": []
+    },
+    {
       "id": "washing-pressing",
       "title": {
         "en": "Washing and pressing",
@@ -17,9 +38,7 @@
       },
       "duration": "24-48 hours",
       "icon": "Shirt",
-      "images": [
-        "/images/services/washing_and_cleaning.webp"
-      ],
+      "images": ["/images/services/washing_and_cleaning.webp"],
       "features": [
         "Premium detergents",
         "Professional pressing",
@@ -244,9 +263,7 @@
       },
       "duration": "24-72 hours",
       "icon": "Heart",
-      "images": [
-        "/images/services/dedicate_washing_cycle.webp"
-      ],
+      "images": ["/images/services/dedicate_washing_cycle.webp"],
       "features": [
         "Gentle cleaning techniques",
         "Delicate fabric care",

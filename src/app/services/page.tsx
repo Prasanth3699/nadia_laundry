@@ -19,16 +19,37 @@ import {
   Baby,
   ShoppingBag,
   Scissors,
+  Truck,
+  Wallet,
+  WashingMachine,
+  Droplets,
+  Beaker,
+  Layers,
+  Wind,
+  Eye,
+  Gift,
+  Target,
+  Droplet,
+  Sun,
+  CheckCircle2,
+  Shield,
+  RotateCcw,
+  Users,
+  Ruler,
+  Waves,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PlaceholderImage } from "@/components/shared/placeholder-image";
 import { Header } from "@/components/sections/header";
+import { Footer } from "@/components/sections/footer";
+import { CoverageSection } from "@/components/sections/coverage";
 import { useLanguage } from "@/components/providers/language-provider";
 import { formatPriceRange, createWhatsAppUrl } from "@/lib/utils";
 import servicesData from "@/data/services.json";
 import companyData from "@/data/company.json";
 
 const iconMap = {
+  // Primary icons used by services
   Shirt,
   Sparkles,
   Zap,
@@ -39,6 +60,24 @@ const iconMap = {
   Baby,
   ShoppingBag,
   Scissors,
+  Truck,
+  Wallet,
+  WashingMachine,
+  Droplets,
+  Beaker,
+  Layers,
+  Wind,
+  Eye,
+  Gift,
+  Target,
+  Droplet,
+  Sun,
+  CheckCircle2,
+  Shield,
+  RotateCcw,
+  Users,
+  Ruler,
+  Waves,
 };
 
 const priceRanges = [
@@ -233,7 +272,7 @@ export default function ServicesPage() {
           >
             {filteredServices.map((service) => {
               const IconComponent =
-                iconMap[service.icon as keyof typeof iconMap];
+                iconMap[service.icon as keyof typeof iconMap] ?? Shirt;
               const isSelected = selectedService === service.id;
               const isHovered = hoveredCard === service.id;
 
@@ -455,8 +494,13 @@ export default function ServicesPage() {
               Get Custom Quote
             </Button>
           </motion.div>
+
+          {/* Location Coverage */}
+          <CoverageSection />
         </div>
       </main>
+      {/* Footer */}
+      <Footer />
     </>
   );
 }

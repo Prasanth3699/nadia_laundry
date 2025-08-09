@@ -44,7 +44,7 @@ export function Hero() {
         </video>
 
         {/* Modern overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-[1px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/30 to-white/20 dark:from-black/60 dark:via-black/40 dark:to-black/60 backdrop-blur-[1px]"></div>
       </div>
 
       {/* Content */}
@@ -60,10 +60,10 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center mt-10 gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 mb-8 border border-white/20"
+            className="inline-flex items-center mt-10 gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 mb-8 border border-gray-400/50 dark:border-gray-800/50"
           >
             <Star className="h-4 w-4 text-yellow-400 fill-current" />
-            <span className="text-white font-medium text-sm tracking-wide">
+            <span className="text-gray-900 dark:text-white font-medium text-sm tracking-wide">
               Premium Laundry Service
             </span>
             <Star className="h-4 w-4 text-yellow-400 fill-current" />
@@ -74,16 +74,22 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-3xl mt-6 sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight text-white"
+            className="text-3xl mt-6 sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight text-slate-900 dark:text-slate-50 drop-shadow-[0_1px_0_rgba(255,255,255,0.6)] dark:drop-shadow-none"
             style={{ fontFamily: "var(--font-display)" }}
           >
             <span>
               Professional{" "}
-              <span className="text-sky-400 font-extrabold">Premium</span>{" "}
+              <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 bg-clip-text text-transparent dark:from-blue-600 dark:via-blue-500 dark:to-cyan-400 font-extrabold drop-shadow-[0_1px_0_rgba(255,255,255,0.5)] dark:drop-shadow-none">
+                Premium
+              </span>{" "}
               Laundry &{" "}
-              <span className="text-sky-400 font-extrabold">Dry Cleaning</span>{" "}
+              <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 bg-clip-text text-transparent dark:from-blue-600 dark:via-blue-500 dark:to-cyan-400 font-extrabold drop-shadow-[0_1px_0_rgba(255,255,255,0.5)] dark:drop-shadow-none">
+                Dry Cleaning
+              </span>{" "}
               Services in{" "}
-              <span className="text-sky-400 font-extrabold">Abu Dhabi</span>
+              <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 bg-clip-text text-transparent dark:from-blue-600 dark:via-blue-500 dark:to-cyan-400 font-extrabold drop-shadow-[0_1px_0_rgba(255,255,255,0.5)] dark:drop-shadow-none">
+                Abu Dhabi
+              </span>
             </span>
           </motion.h1>
 
@@ -92,7 +98,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 font-medium max-w-3xl mx-auto"
+            className="text-lg sm:text-xl md:text-2xl text-slate-800 dark:text-slate-200 mb-6 font-semibold max-w-3xl mx-auto drop-shadow-[0_1px_0_rgba(255,255,255,0.7)] dark:drop-shadow-none"
           >
             {t("hero.subtitle")}
           </motion.p>
@@ -102,7 +108,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-base sm:text-lg text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg text-slate-700 dark:text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_1px_0_rgba(255,255,255,0.8)] dark:drop-shadow-none"
           >
             {t("hero.description")}
           </motion.p>
@@ -140,41 +146,47 @@ export function Hero() {
               delay: 0.8,
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto"
           >
-            <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md rounded-xl p-4 hover:bg-white/20 transition-all duration-300 border border-white/10">
-              <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center">
-                <Truck className="h-5 w-5 text-blue-400" />
+            <div className="flex items-center justify-center gap-3 rounded-xl p-4 transition-all duration-300 border bg-white/80 text-slate-800 border-blue-200/70 shadow-sm hover:bg-white dark:bg-white/10 dark:text-white dark:border-white/10 dark:hover:bg-white/20 backdrop-blur">
+              <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center dark:bg-blue-500/20">
+                <Truck className="h-5 w-5 text-blue-600 dark:text-blue-400" />
               </div>
               <div className="text-left">
-                <span className="text-white font-semibold text-sm block">
+                <span className="font-semibold text-sm block">
                   Free Pickup & Delivery
                 </span>
-                <span className="text-white/70 text-xs">Same day service</span>
+                <span className="text-xs text-slate-600 dark:text-white/70">
+                  Same day service
+                </span>
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md rounded-xl p-4 hover:bg-white/20 transition-all duration-300 border border-white/10">
-              <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center">
-                <Clock className="h-5 w-5 text-purple-400" />
+            <div className="flex items-center justify-center gap-3 rounded-xl p-4 transition-all duration-300 border bg-white/80 text-slate-800 border-purple-200/70 shadow-sm hover:bg-white dark:bg-white/10 dark:text-white dark:border-white/10 dark:hover:bg-white/20 backdrop-blur">
+              <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center dark:bg-purple-500/20">
+                <Clock className="h-5 w-5 text-purple-600 dark:text-purple-400" />
               </div>
               <div className="text-left">
-                <span className="text-white font-semibold text-sm block">
+                <span className="font-semibold text-sm block">
                   24/7 Service
                 </span>
-                <span className="text-white/70 text-xs">Always available</span>
+                <span className="text-xs text-slate-600 dark:text-white/70">
+                  Always available
+                </span>
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md rounded-xl p-4 hover:bg-white/20 transition-all duration-300 border border-white/10 sm:col-span-2 md:col-span-1">
-              <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
-                <Shield className="h-5 w-5 text-green-400" />
+            <div className="flex items-center justify-center gap-3 rounded-xl p-4 transition-all duration-300 border bg-white/80 text-slate-800 border-emerald-200/70 shadow-sm hover:bg-white dark:bg-white/10 dark:text-white dark:border-white/10 dark:hover:bg-white/20 backdrop-blur sm:col-span-2 md:col-span-1">
+              <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center dark:bg-green-500/20">
+                <Shield className="h-5 w-5 text-emerald-600 dark:text-green-400" />
               </div>
               <div className="text-left">
-                <span className="text-white font-semibold text-sm block">
+                <span className="font-semibold text-sm block">
                   Premium Care
                 </span>
-                <span className="text-white/70 text-xs">Eco-friendly</span>
+                <span className="text-xs text-slate-600 dark:text-white/70">
+                  Eco-friendly
+                </span>
               </div>
             </div>
           </motion.div>

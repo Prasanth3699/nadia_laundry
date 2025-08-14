@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://nadialaundry.com/sitemap.xml
+Sitemap: https://www.nadiadrycleaning.com/sitemap.xml
 
 # Disallow admin pages if any
 # Disallow: /admin/

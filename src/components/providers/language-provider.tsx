@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { Language } from "@/types";
 
 interface LanguageContextType {
@@ -21,6 +21,7 @@ const translations = {
     "nav.about": "About",
     "nav.contact": "Contact",
     "nav.book": "Book Now",
+    "nav.settings": "Settings",
 
     // Hero Section
     "hero.title": "Premium Laundry Services in Abu Dhabi",
@@ -72,6 +73,8 @@ const translations = {
     "footer.contact.info": "Contact Info",
     "footer.follow.us": "Follow Us",
     "footer.copyright": "© 2025 Nadia Laundry. All rights reserved.",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Service",
 
     // Testimonials
     "testimonials.title": "What Our Customers Say",
@@ -90,6 +93,7 @@ const translations = {
     "nav.about": "عنا",
     "nav.contact": "اتصل بنا",
     "nav.book": "احجز الآن",
+    "nav.settings": "الإعدادات",
 
     // Hero Section
     "hero.title": "خدمات غسيل مميزة في أبوظبي",
@@ -139,7 +143,9 @@ const translations = {
     "footer.services": "الخدمات",
     "footer.contact.info": "معلومات الاتصال",
     "footer.follow.us": "تابعنا",
-    "footer.copyright": "© 2024 غسيل ناديا. جميع الحقوق محفوظة.",
+    "footer.copyright": "© 2025 غسيل ناديا. جميع الحقوق محفوظة.",
+    "footer.privacy": "سياسة الخصوصية",
+    "footer.terms": "شروط الخدمة",
 
     // Testimonials
     "testimonials.title": "ماذا يقول عملاؤنا",
@@ -160,6 +166,20 @@ interface LanguageProviderProps {
 export function LanguageProvider({ children }: LanguageProviderProps) {
   const [language, setLanguage] = useState<Language>("en");
 
+  // Load language from localStorage on mount
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("nadia-laundry-language");
+    if (savedLanguage && (savedLanguage === "en" || savedLanguage === "ar")) {
+      setLanguage(savedLanguage as Language);
+    }
+  }, []);
+
+  // Save language to localStorage when changed
+  const handleSetLanguage = (newLanguage: Language) => {
+    setLanguage(newLanguage);
+    localStorage.setItem("nadia-laundry-language", newLanguage);
+  };
+
   const t = (key: string): string => {
     return (
       translations[language][
@@ -169,9 +189,9 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
       <div
-        className={language === "ar" ? "text-arabic" : ""}
+        className={language === "ar" ? "arabic-content" : ""}
         dir={language === "ar" ? "rtl" : "ltr"}
       >
         {children}

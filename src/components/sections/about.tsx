@@ -19,13 +19,13 @@ import companyData from "@/data/company.json";
 import { easeInOut } from "framer-motion";
 
 export function About() {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
   const { company } = companyData;
 
   const stats = [
     {
       icon: Users,
-      number: "10,000+",
+      number: "1000+",
       label: { en: "Happy Customers", ar: "عميل سعيد" },
       gradient: "from-blue-500 to-purple-600",
       bgGradient:
@@ -164,10 +164,18 @@ export function About() {
             </span>
           </div>
 
-          <h2 className="heading-secondary mb-4">{t("about.title")}</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight font-heading tracking-tight">
+            <span className="text-gray-900 dark:text-white font-extrabold">
+              About{" "}
+            </span>
+            <span className="bg-gradient-to-r from-pink-600 via-rose-600 to-pink-800 bg-clip-text text-transparent font-black">
+              Our Story
+            </span>
+          </h2>
 
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            {t("about.subtitle")}
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-medium leading-relaxed">
+            Discover the passion and dedication behind Abu Dhabi&apos;s premier
+            laundry service.
           </p>
         </motion.div>
 
@@ -180,9 +188,11 @@ export function About() {
             viewport={{ once: true }}
           >
             <div className="space-y-6">
-              <h3 className="heading-tertiary text-gradient">Our Story</h3>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 font-display bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+                Our Story
+              </h3>
 
-              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed font-medium">
                 {getLocalizedText(company.description, language)}
               </p>
 
@@ -193,10 +203,10 @@ export function About() {
                     <Target className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2 font-heading tracking-tight">
                       Our Mission
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-medium">
                       {getLocalizedText(company.mission, language)}
                     </p>
                   </div>
@@ -210,10 +220,10 @@ export function About() {
                     <Star className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2 font-heading tracking-tight">
                       Our Vision
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-medium">
                       {getLocalizedText(company.vision, language)}
                     </p>
                   </div>
@@ -273,8 +283,15 @@ export function About() {
           className="mb-16"
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <h3 className="heading-tertiary mb-4">Our Speciality</h3>
-            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 font-heading tracking-tight">
+              <span className="text-gray-900 dark:text-white font-extrabold">
+                Our{" "}
+              </span>
+              <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-800 bg-clip-text text-transparent font-black">
+                Speciality
+              </span>
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg font-medium">
               What makes us unique in the laundry industry
             </p>
           </motion.div>
@@ -318,11 +335,11 @@ export function About() {
                   <speciality.icon className="h-8 w-8 text-white" />
                 </motion.div>
 
-                <h4 className="relative text-lg font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-700 dark:group-hover:from-white dark:group-hover:to-gray-200 transition-all duration-300">
+                <h4 className="relative text-lg font-bold text-gray-900 dark:text-white mb-3 font-heading tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-700 dark:group-hover:from-white dark:group-hover:to-gray-200 transition-all duration-300">
                   {getLocalizedText(speciality.title, language)}
                 </h4>
 
-                <p className="relative text-gray-600 dark:text-gray-300 text-sm leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
+                <p className="relative text-gray-600 dark:text-gray-300 text-sm leading-relaxed font-medium group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
                   {getLocalizedText(speciality.description, language)}
                 </p>
 

@@ -17,7 +17,7 @@
       },
       "duration": "",
       "icon": "Truck",
-      "images": ["/images/services/washing_and_cleaning.webp"],
+      "images": ["/images/services/still-life-say-no-fast-fashion.jpg"],
       "features": ["Free pickup and delivery", "Minimum order 30.00 AED"],
       "process": []
     },
@@ -38,7 +38,7 @@
       },
       "duration": "24-48 hours",
       "icon": "Shirt",
-      "images": ["/images/services/washing_and_cleaning.webp"],
+      "images": ["/images/services/washing_and_cleaning.jpg"],
       "features": [
         "Premium detergents",
         "Professional pressing",
@@ -261,7 +261,7 @@
         "max": 60,
         "currency": "AED"
       },
-      "duration": "24-72 hours",
+      "duration": "24-48 hours",
       "icon": "Heart",
       "images": ["/images/services/dedicate_washing_cycle.webp"],
       "features": [
@@ -336,9 +336,9 @@
         "max": 200,
         "currency": "AED"
       },
-      "duration": "3-5 days",
+      "duration": "1-2 days",
       "icon": "Home",
-      "images": ["/images/services/carpet_cleaning_and_sanitization.webp"],
+      "images": ["/images/services/Carpet_cleaning_and_sanitization.webp"],
       "features": [
         "Deep cleaning",
         "Sanitization",
@@ -411,7 +411,7 @@
         "max": 100,
         "currency": "AED"
       },
-      "duration": "2-4 days",
+      "duration": "1-2 days",
       "icon": "Home",
       "images": ["/images/services/curtains.webp"],
       "features": [
@@ -636,7 +636,7 @@
         "max": 100,
         "currency": "AED"
       },
-      "duration": "3-7 days",
+      "duration": "2-3 days",
       "icon": "Scissors",
       "images": ["/images/services/altrations.webp"],
       "features": [

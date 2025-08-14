@@ -34,8 +34,10 @@ export function Contact() {
     {
       icon: Mail,
       title: t("contact.email"),
-      value: company?.contact?.email || "info@nadialaundry.com",
-      action: `mailto:${company?.contact?.email || "info@nadialaundry.com"}`,
+      value: company?.contact?.email || "info@nadiadrycleaning.com",
+      action: `mailto:${
+        company?.contact?.email || "info@nadiadrycleaning.com"
+      }`,
       color: "bg-emerald-50 dark:bg-emerald-950/30",
       iconColor: "text-emerald-500",
       borderColor: "border-emerald-100 dark:border-emerald-800/50",
@@ -133,7 +135,11 @@ export function Contact() {
                 {/* Background glow */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 bg-gradient-to-br from-white to-transparent rounded-2xl"></div>
 
-                <div className={`flex flex-col items-center h-full relative z-10 ${language === 'ar' ? 'text-center' : 'text-center'}`}>
+                <div
+                  className={`flex flex-col items-center h-full relative z-10 ${
+                    language === "ar" ? "text-center" : "text-center"
+                  }`}
+                >
                   <motion.div
                     className={`w-14 h-14 rounded-2xl ${info.color} ${info.borderColor} border flex items-center justify-center mb-4 shadow-lg`}
                     whileHover={{
@@ -145,10 +151,18 @@ export function Contact() {
                   >
                     <info.icon className={`h-7 w-7 ${info.iconColor}`} />
                   </motion.div>
-                  <h3 className={`text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-700 dark:group-hover:from-white dark:group-hover:to-gray-200 transition-all duration-300 ${language === 'ar' ? 'font-arabic' : ''}`}>
+                  <h3
+                    className={`text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-700 dark:group-hover:from-white dark:group-hover:to-gray-200 transition-all duration-300 ${
+                      language === "ar" ? "font-arabic" : ""
+                    }`}
+                  >
                     {info.title}
                   </h3>
-                  <p className={`text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-grow group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300 px-2 ${language === 'ar' ? 'font-arabic' : ''}`}>
+                  <p
+                    className={`text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-grow group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300 px-2 ${
+                      language === "ar" ? "font-arabic" : ""
+                    }`}
+                  >
                     {info.value}
                   </p>
                   {info.action && (
@@ -212,17 +226,29 @@ export function Contact() {
                 <FaWhatsapp className="h-8 w-8 text-white" />
               </motion.div>
 
-              <h3 className={`text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-green-600 group-hover:to-emerald-600 transition-all duration-300 ${language === 'ar' ? 'font-arabic' : ''}`}>
-                {language === 'ar' ? 'تواصل سريع' : 'Quick Contact'}
+              <h3
+                className={`text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-green-600 group-hover:to-emerald-600 transition-all duration-300 ${
+                  language === "ar" ? "font-arabic" : ""
+                }`}
+              >
+                {language === "ar" ? "تواصل سريع" : "Quick Contact"}
               </h3>
 
-              <p className={`text-gray-600 dark:text-gray-300 mb-6 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300 ${language === 'ar' ? 'font-arabic' : ''}`}>
-                {language === 'ar' ? 'احصل على دعم فوري عبر واتساب' : 'Get instant support via WhatsApp'}
+              <p
+                className={`text-gray-600 dark:text-gray-300 mb-6 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300 ${
+                  language === "ar" ? "font-arabic" : ""
+                }`}
+              >
+                {language === "ar"
+                  ? "احصل على دعم فوري عبر واتساب"
+                  : "Get instant support via WhatsApp"}
               </p>
 
               <motion.button
                 onClick={handleWhatsAppClick}
-                className={`bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center mx-auto focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-green-950 relative overflow-hidden group/btn ${language === 'ar' ? 'flex-row-reverse font-arabic' : ''}`}
+                className={`bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center mx-auto focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-green-950 relative overflow-hidden group/btn ${
+                  language === "ar" ? "flex-row-reverse font-arabic" : ""
+                }`}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.2 },
@@ -233,7 +259,7 @@ export function Contact() {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-1000"></div>
 
                 <motion.div
-                  className={language === 'ar' ? 'ml-2' : 'mr-2'}
+                  className={language === "ar" ? "ml-2" : "mr-2"}
                   animate={{
                     rotate: [0, 10, -10, 0],
                     transition: {
@@ -246,7 +272,7 @@ export function Contact() {
                   <FaWhatsapp className="h-5 w-5" />
                 </motion.div>
                 <span className="relative z-10">
-                  {language === 'ar' ? 'تحدث على واتساب' : 'Chat on WhatsApp'}
+                  {language === "ar" ? "تحدث على واتساب" : "Chat on WhatsApp"}
                 </span>
               </motion.button>
             </div>

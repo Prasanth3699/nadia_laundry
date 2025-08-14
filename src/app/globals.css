@@ -48,6 +48,28 @@
     @apply cursor-pointer;
   }
 
+  /* Line clamp utilities */
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
   /* Interactive elements cursor */
   [role="button"],
   .cursor-pointer {
@@ -89,6 +111,33 @@
 
   .font-arabic {
     font-family: var(--font-arabic);
+  }
+  
+  /* Arabic font disabled - use default font for all content */
+  /* .arabic-content :not(nav):not(.navigation-menu):not(.mobile-nav-item):not(.desktop-nav-item):not(.service-card):not(.promo-card):not(.stats-card) {
+    font-family: var(--font-arabic);
+  } */
+  
+  /* RTL content styling disabled */
+  /* .rtl-content {
+    direction: rtl;
+    text-align: right;
+  } */
+  
+  /* Ensure navigation and cards always use default font */
+  .navigation-menu,
+  .mobile-nav-item,
+  .desktop-nav-item,
+  .service-card,
+  .promo-card,
+  .stats-card,
+  nav button,
+  header nav,
+  header nav *,
+  .service-card *,
+  .promo-card *,
+  .stats-card * {
+    font-family: var(--font-sans) !important;
   }
 }
 
@@ -491,16 +540,18 @@
   }
 }
 
-/* Arabic RTL Support */
-[dir="rtl"] {
+/* Arabic RTL Support - DISABLED */
+/* [dir="rtl"] {
   text-align: right;
-}
+} */
 
-[dir="rtl"] .flex {
+/* RTL flex direction - DISABLED */
+/* [dir="rtl"] .flex:not(.mobile-nav-item):not(.mobile-nav-container) {
   flex-direction: row-reverse;
-}
+} */
 
-[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+/* RTL spacing rules - DISABLED */
+/* [dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
   margin-left: 0;
   margin-right: 1rem;
@@ -522,10 +573,10 @@
   --tw-space-x-reverse: 1;
   margin-left: 0;
   margin-right: 1.5rem;
-}
+} */
 
-/* RTL gap fixes */
-[dir="rtl"] .gap-2 {
+/* RTL gap fixes - DISABLED */
+/* [dir="rtl"] .gap-2 {
   gap: 0.5rem;
 }
 
@@ -539,10 +590,10 @@
 
 [dir="rtl"] .gap-6 {
   gap: 1.5rem;
-}
+} */
 
-/* RTL margin fixes */
-[dir="rtl"] .mr-2 {
+/* RTL margin fixes - DISABLED */
+/* [dir="rtl"] .mr-2 {
   margin-right: 0;
   margin-left: 0.5rem;
 }
@@ -560,19 +611,19 @@
 [dir="rtl"] .ml-3 {
   margin-left: 0;
   margin-right: 0.75rem;
-}
+} */
 
-/* RTL text alignment */
-[dir="rtl"] .text-left {
+/* RTL text alignment - DISABLED */
+/* [dir="rtl"] .text-left {
   text-align: right;
 }
 
 [dir="rtl"] .text-right {
   text-align: left;
-}
+} */
 
-/* RTL specific for contact cards */
-[dir="rtl"] .glass-card .flex {
+/* RTL specific rules - ALL DISABLED */
+/* [dir="rtl"] .glass-card .flex {
   flex-direction: row-reverse;
 }
 
@@ -580,15 +631,13 @@
   flex-direction: column;
 }
 
-/* RTL specific for footer */
 [dir="rtl"] .footer-links {
   text-align: right;
 }
 
-/* RTL transforms */
 [dir="rtl"] .hover\:translate-x-1:hover {
   transform: translateX(-0.25rem);
-}
+} */
 
 /* Responsive Video */
 .video-responsive {

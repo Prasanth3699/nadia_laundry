@@ -42,31 +42,54 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nadialaundry.com"),
+  metadataBase: new URL("https://www.nadiadrycleaning.com"),
   title: {
-    default: "Nadia Laundry - Premium Laundry & Dry Cleaning Services in UAE",
+    default: "Nadia Laundry - Best Laundry & Dry Cleaning Services Abu Dhabi UAE",
     template: "%s | Nadia Laundry",
   },
   description:
-    " Premium laundry & dry-cleaning services in Abu Dhabi, UAE. Same-day pickup & delivery, eco-friendly solutions, 24/7 service. Professional garment care with modern technology. Call +9710503837591",
+    "Best Laundry Service in Abu Dhabi UAE. Same-day pickup & delivery, eco-friendly dry cleaning, 24/7 service, free collection, professional garment care. Call +971050483759",
   keywords: [
-    "laundry service Abu Dhabi",
-    "dry cleaning UAE",
-    "premium laundry",
-    "pickup delivery laundry",
-    "eco-friendly dry cleaning",
-    "professional cleaning UAE",
-    "same day laundry service",
-    "24/7 laundry pickup",
-    "garment care Abu Dhabi",
-    "clothes cleaning service",
-    "industrial laundry UAE",
-    "hotel laundry service",
-    "commercial cleaning",
-    "express laundry",
-    "nadia laundry",
+    // Primary UAE Laundry Keywords
+    "best laundry service Abu Dhabi",
+    "laundry near me Abu Dhabi",
+    "dry cleaning Abu Dhabi UAE",
+    "laundry pickup delivery UAE",
+    "cheap laundry service Abu Dhabi",
+    "professional laundry Abu Dhabi",
+    "same day laundry Abu Dhabi",
+    "24 hour laundry service UAE",
+    "eco friendly dry cleaning UAE",
+    "premium laundry Abu Dhabi",
+    // Local Area Keywords  
+    "laundry service Musaffah",
+    "dry cleaning Corniche Abu Dhabi",
+    "laundry Khalifa City",
+    "cleaning service Al Reem Island",
+    "laundry Marina Mall area",
+    "dry cleaning Yas Island",
+    "laundry service Saadiyat Island",
+    // Service-Specific Keywords
+    "carpet cleaning Abu Dhabi",
+    "curtain cleaning UAE", 
+    "baby stroller cleaning",
+    "shoe cleaning Abu Dhabi",
+    "alteration services UAE",
+    "steam ironing Abu Dhabi",
+    "delicate wash Abu Dhabi",
+    // Commercial Keywords
+    "hotel laundry service UAE",
+    "restaurant laundry Abu Dhabi", 
+    "commercial cleaning UAE",
+    "bulk laundry service",
+    "office cleaning Abu Dhabi",
+    // Competitor Keywords
+    "better than speed wash",
+    "alternative to pressto",
+    "best laundry UAE 2025",
+    "nadia laundry Abu Dhabi",
   ],
-  authors: [{ name: "Nadia Laundry", url: "https://nadialaundry.com" }],
+  authors: [{ name: "Nadia Laundry", url: "https://www.nadiadrycleaning.com" }],
   creator: "Nadia Laundry",
   publisher: "Nadia Laundry",
   formatDetection: {
@@ -77,11 +100,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_AE",
-    url: "https://nadialaundry.com",
-    siteName: "Nadia Laundry",
-    title: "Nadia Laundry - Premium Laundry Services in UAE",
+    url: "https://www.nadiadrycleaning.com",
+    siteName: "Nadia Laundry - Best Laundry Abu Dhabi",
+    title: "Best Laundry Service Abu Dhabi UAE | Same Day Pickup & Delivery",
     description:
-      "Experience premium laundry & dry-cleaning in Abu Dhabi. Same-day pickup & delivery, eco-friendly solutions, professional garment care. Book now!",
+      "Top-rated laundry & dry cleaning in Abu Dhabi. FREE pickup & delivery, same-day service, eco-friendly, 4.9 star rating. Book now +971050483759",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -94,11 +117,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@nadialaundry",
-    creator: "@nadialaundry",
-    title: "Nadia Laundry - Premium Laundry Services UAE",
+    site: "@nadiya54425",
+    creator: "@nadiya54425",
+    title: "Best Laundry Service Abu Dhabi UAE - Nadia Laundry",
     description:
-      "Same-day pickup & delivery • Eco-friendly solutions • Professional care • Abu Dhabi, UAE",
+      "Same-day pickup & delivery | Eco-friendly solutions | Professional care | Abu Dhabi, UAE | Call +971050483759",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -121,10 +144,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://nadialaundry.com",
+    canonical: "https://www.nadiadrycleaning.com",
     languages: {
-      "en-AE": "https://nadialaundry.com",
-      "ar-AE": "https://nadialaundry.com/ar",
+      "en-AE": "https://www.nadiadrycleaning.com",
+      "ar-AE": "https://www.nadiadrycleaning.com/ar",
     },
   },
   category: "business",
@@ -225,7 +248,7 @@ export default function RootLayout({
                 "Premium laundry and dry-cleaning services in Abu Dhabi, UAE",
               image: "/images/logo/Nadia Laundry.png",
               telephone: "+9710503837591",
-              email: "info@nadialaundry.com",
+              email: "info@nadiadrycleaning.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Abu Dhabi musaffa 16 & Cornich road",
@@ -237,7 +260,7 @@ export default function RootLayout({
                 latitude: 24.4539,
                 longitude: 54.3773,
               },
-              url: "https://nadialaundry.com",
+              url: "https://www.nadiadrycleaning.com",
               priceRange: "$$",
               openingHours: [
                 "Mo-Th 08:00-22:00",

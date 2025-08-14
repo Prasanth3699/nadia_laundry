@@ -3,7 +3,7 @@ import servicesData from "@/data/services.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://nadialaundry.com";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.nadiadrycleaning.com";
 
   // Static pages
   const staticPages = [

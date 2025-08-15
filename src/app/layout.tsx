@@ -44,7 +44,8 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nadiadrycleaning.com"),
   title: {
-    default: "Nadia Laundry - Best Laundry & Dry Cleaning Services Abu Dhabi UAE",
+    default:
+      "Nadia Laundry - Best Laundry & Dry Cleaning Services Abu Dhabi UAE",
     template: "%s | Nadia Laundry",
   },
   description:
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     "24 hour laundry service UAE",
     "eco friendly dry cleaning UAE",
     "premium laundry Abu Dhabi",
-    // Local Area Keywords  
+    // Local Area Keywords
     "laundry service Musaffah",
     "dry cleaning Corniche Abu Dhabi",
     "laundry Khalifa City",
@@ -71,7 +72,7 @@ export const metadata: Metadata = {
     "laundry service Saadiyat Island",
     // Service-Specific Keywords
     "carpet cleaning Abu Dhabi",
-    "curtain cleaning UAE", 
+    "curtain cleaning UAE",
     "baby stroller cleaning",
     "shoe cleaning Abu Dhabi",
     "alteration services UAE",
@@ -79,7 +80,7 @@ export const metadata: Metadata = {
     "delicate wash Abu Dhabi",
     // Commercial Keywords
     "hotel laundry service UAE",
-    "restaurant laundry Abu Dhabi", 
+    "restaurant laundry Abu Dhabi",
     "commercial cleaning UAE",
     "bulk laundry service",
     "office cleaning Abu Dhabi",

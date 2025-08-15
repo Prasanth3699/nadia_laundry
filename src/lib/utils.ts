@@ -40,7 +40,13 @@ export function createWhatsAppUrl(
 export function scrollToSection(elementId: string): void {
   const element = document.getElementById(elementId);
   if (element) {
-    element.scrollIntoView({ behavior: "smooth", block: "start" });
+    const headerHeight = 80; // Account for fixed header
+    const elementPosition = element.offsetTop - headerHeight;
+    
+    window.scrollTo({
+      top: elementPosition,
+      behavior: "smooth"
+    });
   }
 }
 

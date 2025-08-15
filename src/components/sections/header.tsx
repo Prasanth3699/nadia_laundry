@@ -43,7 +43,10 @@ export function Header() {
       const sectionId = href.substring(1);
       // Check if we're on the home page
       if (window.location.pathname === "/") {
-        scrollToSection(sectionId);
+        // Add a small delay to ensure mobile menu closes before scrolling
+        setTimeout(() => {
+          scrollToSection(sectionId);
+        }, 100);
       } else {
         // Navigate to home page with hash, avoiding trailing slash
         window.location.href = `${window.location.origin}${href}`;
@@ -78,18 +81,18 @@ export function Header() {
             className="border-b border-gray-200/50 dark:border-gray-700/50 bg-gradient-to-r from-blue-50/80 to-purple-50/80 dark:from-blue-950/20 dark:to-purple-950/20 overflow-hidden"
           >
             <div className="container-custom">
-              <div className="flex items-center justify-between py-3 text-sm">
-                <div className="flex items-center gap-6">
+              <div className="flex items-center justify-between py-2 sm:py-3 text-xs sm:text-sm">
+                <div className="flex items-center gap-3 sm:gap-6">
                   <motion.div 
-                    className="flex items-center gap-2 text-gray-700 dark:text-gray-300"
+                    className="flex items-center gap-1 sm:gap-2 text-gray-700 dark:text-gray-300"
                     whileHover={{ scale: 1.05 }}
                   >
-                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center">
-                      <Phone className="h-4 w-4 text-green-600 dark:text-green-400" />
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500/20 rounded-full flex items-center justify-center">
+                      <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-green-600 dark:text-green-400" />
                     </div>
                     <a 
                       href={`tel:${company.contact.phone}`}
-                      className="font-semibold hover:text-green-600 dark:hover:text-green-400 transition-colors"
+                      className="font-semibold hover:text-green-600 dark:hover:text-green-400 transition-colors text-xs sm:text-sm"
                     >
                       {company.contact.phone}
                     </a>
@@ -106,13 +109,13 @@ export function Header() {
                 </div>
 
                 <motion.div 
-                  className="flex items-center gap-2 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 px-4 py-2 rounded-full border border-yellow-400/30"
+                  className="flex items-center gap-1 sm:gap-2 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 px-2 sm:px-4 py-1 sm:py-2 rounded-full border border-yellow-400/30"
                   animate={{ scale: [1, 1.05, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  <Star className="h-4 w-4 text-yellow-600 dark:text-yellow-400 fill-current" />
-                  <span className="font-bold text-yellow-700 dark:text-yellow-400">25% OFF</span>
-                  <span className="text-gray-700 dark:text-gray-300 font-semibold">First Order</span>
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-600 dark:text-yellow-400 fill-current" />
+                  <span className="font-bold text-yellow-700 dark:text-yellow-400 text-xs sm:text-sm">25% OFF</span>
+                  <span className="text-gray-700 dark:text-gray-300 font-semibold text-xs sm:text-sm hidden sm:inline">First Order</span>
                 </motion.div>
               </div>
             </div>

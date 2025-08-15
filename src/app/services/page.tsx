@@ -435,7 +435,7 @@ export default function ServicesPage() {
     <>
       <Header />
       
-      <main className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-20">
+      <main className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-24 sm:pt-20">
         {/* Hero Section */}
         <section className="relative py-16 md:py-24 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-blue-500/5 dark:to-purple-500/5" />
@@ -457,31 +457,31 @@ export default function ServicesPage() {
                 Premium Laundry Services
               </motion.div>
 
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+              <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight">
                 Complete Laundry
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                   {" "}Solutions
                 </span>
               </h1>
               
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed">
                 Professional cleaning services with modern technology, eco-friendly solutions, 
                 and exceptional care for all your garments.
               </p>
 
               {/* Stats */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
                 <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">10+</div>
-                  <div className="text-gray-600 dark:text-gray-300">Services Available</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">10+</div>
+                  <div className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Services Available</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">24-72h</div>
-                  <div className="text-gray-600 dark:text-gray-300">Delivery Time</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-600 mb-1 sm:mb-2">24-72h</div>
+                  <div className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Delivery Time</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">20+</div>
-                  <div className="text-gray-600 dark:text-gray-300">Areas Covered</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-600 mb-1 sm:mb-2">20+</div>
+                  <div className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Areas Covered</div>
                 </div>
               </div>
             </motion.div>

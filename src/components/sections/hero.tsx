@@ -143,7 +143,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-custom text-center pt-20 pb-16">
+      <div className="relative z-10 container-custom text-center pt-24 sm:pt-20 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -155,15 +155,15 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 mt-20 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-blue-200 dark:border-blue-700/50 shadow-lg"
+            className="inline-flex items-center gap-2 mt-20 sm:mt-20 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-blue-200 dark:border-blue-700/50 shadow-lg"
           >
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
             >
-              <Star className="h-5 w-5 text-yellow-500 fill-current" />
+              <Star className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-500 fill-current" />
             </motion.div>
-            <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm tracking-wide">
+            <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs sm:text-sm tracking-wide text-center leading-tight">
               #1 Premium Laundry Service in Abu Dhabi
             </span>
             <motion.div
@@ -175,7 +175,7 @@ export function Hero() {
                 delay: 0.5,
               }}
             >
-              <Star className="h-5 w-5 text-yellow-500 fill-current" />
+              <Star className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-500 fill-current" />
             </motion.div>
           </motion.div>
 
@@ -184,7 +184,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight font-heading tracking-tight"
+            className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight font-heading tracking-tight"
           >
             <span className="text-gray-900 dark:text-white font-extrabold">
               Premium{" "}
@@ -192,9 +192,9 @@ export function Hero() {
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent font-black">
               Laundry Services
             </span>
-            <br />
-            <span className="text-gray-700 dark:text-gray-300 text-3xl md:text-5xl lg:text-6xl font-semibold font-display italic">
-              in Abu Dhabi
+            <br className="hidden sm:block" />
+            <span className="text-gray-700 dark:text-gray-300 text-xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold font-display italic">
+              {" "}in Abu Dhabi
             </span>
           </motion.h1>
 

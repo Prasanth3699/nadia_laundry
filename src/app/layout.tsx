@@ -264,9 +264,7 @@ export default function RootLayout({
               url: "https://www.nadiadrycleaning.com",
               priceRange: "$$",
               openingHours: [
-                "Mo-Th 08:00-22:00",
-                "Fr 14:00-22:00",
-                "Sa-Su 08:00-22:00",
+                "Mo-Su 08:00-23:30",
               ],
               serviceArea: {
                 "@type": "GeoCircle",

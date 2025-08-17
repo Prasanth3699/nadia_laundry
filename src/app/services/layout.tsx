@@ -78,9 +78,7 @@ export default function ServicesLayout({
               "longitude": companyData.company.location.coordinates.lng
             },
             "openingHours": [
-              "Mo-Th 08:00-23:45",
-              "Fr 14:00-23:45", 
-              "Sa-Su 08:00-23:45"
+              "Mo-Su 08:00-23:30"
             ],
             "priceRange": "$$",
             "areaServed": coverageData.areas.map(area => ({

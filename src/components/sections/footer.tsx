@@ -269,16 +269,8 @@ export function Footer() {
                 <div className="space-y-3 mb-6">
                   <div className="text-gray-300 font-medium">
                     <div className="flex justify-between">
-                      <span>Sun-Thu:</span>
-                      <span className="text-emerald-400">8AM-10PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Friday:</span>
-                      <span className="text-emerald-400">2PM-10PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday:</span>
-                      <span className="text-emerald-400">8AM-10PM</span>
+                      <span>Daily:</span>
+                      <span className="text-emerald-400">8AM-11:30PM</span>
                     </div>
                   </div>
                 </div>

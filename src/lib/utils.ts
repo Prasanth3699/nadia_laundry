@@ -120,13 +120,13 @@ export function copyToClipboard(text: string): Promise<boolean> {
 
 export function getBusinessHours(day: string): string {
   const hours: Record<string, string> = {
-    sunday: "8:00 AM - 10:00 PM",
-    monday: "8:00 AM - 10:00 PM",
-    tuesday: "8:00 AM - 10:00 PM",
-    wednesday: "8:00 AM - 10:00 PM",
-    thursday: "8:00 AM - 10:00 PM",
-    friday: "2:00 PM - 10:00 PM",
-    saturday: "8:00 AM - 10:00 PM",
+    sunday: "8:00 AM - 11:30 PM",
+    monday: "8:00 AM - 11:30 PM",
+    tuesday: "8:00 AM - 11:30 PM",
+    wednesday: "8:00 AM - 11:30 PM",
+    thursday: "8:00 AM - 11:30 PM",
+    friday: "8:00 AM - 11:30 PM",
+    saturday: "8:00 AM - 11:30 PM",
   };
   return hours[day.toLowerCase()] || "Closed";
 }
@@ -139,13 +139,13 @@ export function isBusinessOpen(): boolean {
   const currentTime = now.getHours() * 60 + now.getMinutes();
 
   const businessHours: Record<string, { open: number; close: number }> = {
-    sunday: { open: 8 * 60, close: 22 * 60 },
-    monday: { open: 8 * 60, close: 22 * 60 },
-    tuesday: { open: 8 * 60, close: 22 * 60 },
-    wednesday: { open: 8 * 60, close: 22 * 60 },
-    thursday: { open: 8 * 60, close: 22 * 60 },
-    friday: { open: 14 * 60, close: 22 * 60 },
-    saturday: { open: 8 * 60, close: 22 * 60 },
+    sunday: { open: 8 * 60, close: 23 * 60 + 30 },
+    monday: { open: 8 * 60, close: 23 * 60 + 30 },
+    tuesday: { open: 8 * 60, close: 23 * 60 + 30 },
+    wednesday: { open: 8 * 60, close: 23 * 60 + 30 },
+    thursday: { open: 8 * 60, close: 23 * 60 + 30 },
+    friday: { open: 8 * 60, close: 23 * 60 + 30 },
+    saturday: { open: 8 * 60, close: 23 * 60 + 30 },
   };
 
   const todayHours = businessHours[day];

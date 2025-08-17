@@ -69,8 +69,7 @@ export default function TermsOfService() {
                       Express services may be available at additional cost
                     </li>
                     <li>
-                      We operate Monday-Thursday and Saturday-Sunday: 8:00 AM -
-                      11:45 PM, Friday: 2:00 PM - 11:45 PM
+                      We operate daily: 8:00 AM - 11:30 PM
                     </li>
                   </ul>
                 </section>

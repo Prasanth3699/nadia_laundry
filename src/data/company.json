@@ -18,8 +18,8 @@
     },
     "location": {
       "address": {
-        "en": "Abu Dhabi Musaffah 16 & Corniche Road, UAE",
-        "ar": "أبوظبي مصفح 16 وطريق الكورنيش، الإمارات العربية المتحدة"
+        "en": "Al Qunout 1st, musaffah-16 & Cornish  Road Musaffah, AbuDhabi, UAE",
+        "ar": "الكنوت الأولى، مصفح 16 وطريق الكورنيش مصفح، أبوظبي، الإمارات العربية المتحدة"
       },
       "city": "Abu Dhabi",
       "coordinates": {
@@ -33,13 +33,13 @@
       "whatsapp": "+9710504837591"
     },
     "hours": {
-      "sunday": "8:00 AM - 11.45 PM",
-      "monday": "8:00 AM - 11.45 PM",
-      "tuesday": "8:00 AM - 11.45 PM",
-      "wednesday": "8:00 AM - 11.45 PM",
-      "thursday": "8:00 AM - 11.45 PM",
-      "friday": "2:00 PM - 11.45 PM",
-      "saturday": "8:00 AM - 11.45 PM"
+      "sunday": "8:00 AM - 11:30 PM",
+      "monday": "8:00 AM - 11:30 PM",
+      "tuesday": "8:00 AM - 11:30 PM",
+      "wednesday": "8:00 AM - 11:30 PM",
+      "thursday": "8:00 AM - 11:30 PM",
+      "friday": "8:00 AM - 11:30 PM",
+      "saturday": "8:00 AM - 11:30 PM"
     }
   },
   "whatsappConfig": {

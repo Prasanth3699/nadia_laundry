@@ -12,13 +12,9 @@ export function Contact() {
   const { company, whatsappConfig } = companyData;
 
   const formatOperatingHours = () => {
-    if (!company.hours) return "Daily: 8:00 AM - 10:00 PM";
+    if (!company.hours) return "Daily: 8:00 AM - 11:30 PM";
 
-    const weekdays = "Mon-Thu: 8:00 AM - 10:00 PM";
-    const friday = "Fri: 2:00 PM - 10:00 PM";
-    const weekend = "Sat-Sun: 8:00 AM - 10:00 PM";
-
-    return `${weekdays}, ${friday}, ${weekend}`;
+    return "Daily: 8:00 AM - 11:30 PM";
   };
 
   const contactInfo = [
